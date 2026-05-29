@@ -1,59 +1,44 @@
 export const authorData = {
-  name: "Carol Cutrona",
-  fullName: "Carol Cutrona",
-  email: "sweetpea105@comcast.net",
-  tagline: "Historical Fiction Author | Civil War Scholar",
+  name: "Curtis Orloff",
+  fullName: "Curtis Orloff",
+  email: "curtisorloff@gmail.com",
+  tagline: "Historical Fiction Author | Geologist | Army Veteran",
   
   book: {
-    title: "By Lantern's Light",
-    fullTitle: "By Lantern's Light",
-    description: `In 1861 a courageous band of women brave death and defy political powers to render battlefield relief, launching the first MASH Unit on American soil. By these deeds they write their page in history.
+    title: "Thunder in the Wind",
+    fullTitle: "Thunder in the Wind",
+    description: `Thunder in the Wind is a historical novel concerning the assimilation reservation American Indians underwent at the turn of the twentieth century. The first part of the work describes how the Assiniboine, and one family in particular, deal with the onslaught of a society that not only was technologically superior, but also thought itself so morally superior it treats the tribe as if it was a hopeless dependent.
 
-This dramatic, fact-based story is told through the eyes of Havannah, a fiery but shallow debutante, who joins the first team of women to work the battlefields during the Civil War. While blood flows and Minie balls fly, Havannah squares off with head field hospital nurse who vows to dismiss her from the corps. The heroine's love affair with a crusty army surgeon adds fuel to the fire.
-
-Meanwhile, sisters at home battle enemies who pledge to squash their efforts to establish the innovative relief plan. On the trail women, board wagons hauled by cantankerous mules, strap soup pots to wagons, forge mountain passes, dodge bullets, set up field hospitals alongside battlefields and scour the land, seeking life among the dead. The weapons they carried were not muskets but hot soup, whispered prayers and compassion, bolstered by fierce determination.`,
+The second part follows the exploits of the main character as he tries to unite the Plains, Great Basin, and Southwestern tribes in revolt, not to defeat the whites, but to scare them so badly they would restore to the Indians the selfhood they had stolen. Miskaw deals with the same trials Tecumseh experienced early in the previous century while uniting the tribes east of the Mississippi and, in dealing with them learns several truths about himself and the human condition. If not for hubris, the outcome of his endeavor may have been dramatically different.`,
     
-    themes: ["Civil War Era", "Women's History", "Battlefield Medicine", "Romance", "Historical Fiction"],
+    themes: ["Native American History", "Assimilation Era", "Tribal Unity", "Historical Fiction", "American West", "Cultural Identity"],
     
     details: {
       format: "Paperback & eBook",
       genre: "Historical Fiction",
-      setting: "American Civil War, 1861"
+      setting: "American West, Turn of the 20th Century"
     }
   },
   
   authorBio: {
-    fullBio: `A graduate of California State University at Northridge, Carol writes in a variety of genres. She has written a screenplay based on the novel. Her work has been published in national periodicals, as well as in Braille. She is a member of the National League of American Pen Women, Simi Valley Branch, and has served on the board of directors.
+    fullBio: `I'm a Yankee who became a damn Yankee when I wouldn't leave the South. When I did leave it, was for overseas where I comfortably acquired the moniker of "yank". I have two bachelor degrees. The one in geology I use to support myself, the one in history just showed I am curious about human nature.
 
-Today, she lives in the South Carolina Lowcountry with husband, John, and divides her time between writing, speaking on the topic of Women in the Civil War, acting and participating in civic activities. She is working on her next novel and screenplay, Maggie, a tale that reveals her adventures as a young social worker on the mean streets of the City of Angels.`,
+This curiosity culminated in Thunder in the Wind after I found out about a Cree named Almighty Voice while I was engaged in geologic fieldwork in Montana. His revolt almost united the tribes. I was an Army 1st Lieutenant, lived for golf as a youth and got to play on the University of Houston golf team, and was an Eagle Boy Scout.
+
+I've been writing books for over two decades, getting only to the agent level. At present, one agent is peddling a novel I wrote about the oilfield. I was a well-site geologist for fourteen years and a petroleum engineer, mostly overseas, for seven years.`,
     
-    education: "California State University at Northridge",
-    memberships: ["National League of American Pen Women", "Simi Valley Branch Board Member"],
-    location: "South Carolina Lowcountry",
-    research: `My research for this book has directed me down many interesting roads. In fact, I have been studying women's work in the Civil War for many years and never tire of the fascinating characters and stories I've unearthed.`
+    education: "Bachelor's Degrees in Geology and History",
+    memberships: ["Army Veteran - 1st Lieutenant", "Eagle Scout", "University of Houston Golf Team"],
+    location: "Louisiana",
+    research: `My research for this book began during geologic fieldwork in Montana when I discovered the story of Almighty Voice, a Cree whose revolt almost united the tribes. This discovery sparked years of research into Native American history at the turn of the twentieth century.`
   },
   
   testimonials: [
     {
-      name: "Janet S. Foerster",
-      rating: 5,
-      title: "Great First Novel",
-      review: `"By Lantern's Light" spins an exciting tale about women's contributions during the Civil War. The women who worked under the flag of the U.S. Sanitary Commission deserve to be remembered! Having been an attorney in Washington, I was intrigued and impressed by what those women achieved in the halls of government at a time when ladies were seldom heard much less allowed to be active participants. A wonderful first novel for Mrs. Cutrona - a talented writer! I can't wait for a sequel and hopefully a movie.`,
-      date: "May 12, 2001"
-    },
-    {
-      name: "Debra DeForty",
-      rating: 5,
-      title: "By Lantern's Light",
-      review: `By Lantern's Light is a fascinating book, telling the story about what women accomplished during the Civil War, both on the fields and behind the lines in rendering battlefield relief. The story presents all the drama of that era; yet love, adventure and humor play well upon the pages, enticing the reader to read on. Being a nurse, I really appreciated what women were able to do during that time period and with so little. By Lantern's Light is a good read and an interesting historical novel.`,
-      date: "May 26, 2001"
-    },
-    {
-      name: "Margaret V. Shedd",
-      rating: 5,
-      title: "Avid Reader Discovers New Talent",
-      review: `Never underestimate the dedication and valor of the ladies who volunteered during our Nation's Civil War. Carol J. Cutrona has given us a very moving and informative historical novel. As an avid reader, I highly recommend this book to those of you who enjoy burning the midnight oil while discovering new and talented authors.`,
-      date: "June 22, 2001"
+      rating: 4,
+      title: "Book about deculturation and identityy",
+      review: `Reads slowly, but that is the point the author try to make. Deculturation is insidiious and cultural identity takes time and soul searching. The protagonist did what any rational person would do given the same circumstances. It presciently described how intelligent terrorism works.`,
+      date: "2016"
     }
   ]
 };

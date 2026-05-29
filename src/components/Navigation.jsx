@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FaBars, FaTimes, FaHome, FaUser, FaBook, FaEnvelope, FaStar, FaFire } from 'react-icons/fa';
+import { FaBars, FaTimes, FaHome, FaUser, FaBook, FaEnvelope, FaStar, FaFeatherAlt } from 'react-icons/fa';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,7 +49,7 @@ const Navigation = () => {
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${
-      scrolled ? 'bg-white shadow-lg py-3' : 'bg-white/98 backdrop-blur-sm py-5'
+      scrolled ? 'bg-cream shadow-lg py-3' : 'bg-cream/98 backdrop-blur-sm py-5'
     }`}>
       <div className="container-custom mx-auto flex justify-between items-center">
         <a 
@@ -58,11 +58,11 @@ const Navigation = () => {
           onClick={(e) => handleClick(e, '#home', 'home')}
         >
           <div className="relative">
-            <FaFire className="text-primary group-hover:scale-110 transition-transform duration-300" size={22} />
-            <FaStar className="text-secondary absolute -top-2 -right-2 text-xs opacity-0 group-hover:opacity-100 transition-all duration-300" />
+            <FaFeatherAlt className="text-gold group-hover:scale-110 transition-transform duration-300" size={22} />
+            <FaStar className="text-terracotta absolute -top-2 -right-2 text-xs opacity-0 group-hover:opacity-100 transition-all duration-300" />
           </div>
-          <span className="text-xl md:text-2xl font-display font-bold text-primary">
-            Carol Cutrona
+          <span className="text-xl md:text-2xl font-display font-bold text-gold">
+            Curtis Orloff
           </span>
         </a>
 
@@ -74,8 +74,8 @@ const Navigation = () => {
               onClick={(e) => handleClick(e, item.href, item.id)}
               className={`flex items-center gap-2 px-4 py-2 rounded-md transition-all duration-300 ${
                 activeTab === item.id
-                  ? 'bg-primary text-white shadow-md'
-                  : 'text-dark/70 hover:text-primary hover:bg-secondary/20'
+                  ? 'bg-gold text-brown-dark shadow-md'
+                  : 'text-brown-dark/70 hover:text-gold hover:bg-terracotta/20'
               }`}
             >
               {item.icon}
@@ -85,7 +85,7 @@ const Navigation = () => {
         </div>
 
         <button 
-          className="md:hidden text-primary p-2 rounded-md hover:bg-secondary/20 transition-all duration-300"
+          className="md:hidden text-gold p-2 rounded-md hover:bg-terracotta/20 transition-all duration-300"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
@@ -93,7 +93,7 @@ const Navigation = () => {
       </div>
 
       {isMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-white shadow-xl border-t border-primary/20 animate-slide-down">
+        <div className="md:hidden absolute top-full left-0 w-full bg-cream shadow-xl border-t border-gold/20 animate-slide-down">
           <div className="flex flex-col gap-2 py-4 px-6">
             {navItems.map((item) => (
               <a
@@ -101,8 +101,8 @@ const Navigation = () => {
                 href={item.href}
                 className={`flex items-center gap-3 px-4 py-3 rounded-md transition-all duration-300 ${
                   activeTab === item.id
-                    ? 'bg-primary text-white font-semibold'
-                    : 'text-dark/70 hover:text-primary hover:bg-secondary/20'
+                    ? 'bg-gold text-brown-dark font-semibold'
+                    : 'text-brown-dark/70 hover:text-gold hover:bg-terracotta/20'
                 }`}
                 onClick={(e) => handleClick(e, item.href, item.id)}
               >
@@ -110,17 +110,17 @@ const Navigation = () => {
                 <span className="text-base">{item.name}</span>
                 {activeTab === item.id && (
                   <span className="ml-auto">
-                    <FaFire size={16} className="text-secondary" />
+                    <FaFeatherAlt size={16} className="text-terracotta" />
                   </span>
                 )}
               </a>
             ))}
             
-            <div className="mt-4 pt-4 border-t border-primary/20 text-center">
-              <p className="text-dark/50 text-xs flex items-center justify-center gap-2">
-                <FaFire size={10} className="text-primary" />
-                By Lantern's Light - A Civil War Epic
-                <FaStar size={10} className="text-secondary" />
+            <div className="mt-4 pt-4 border-t border-gold/20 text-center">
+              <p className="text-brown-dark/50 text-xs flex items-center justify-center gap-2">
+                <FaFeatherAlt size={10} className="text-gold" />
+                Thunder in the Wind - A Historical Epic
+                <FaStar size={10} className="text-terracotta" />
               </p>
             </div>
           </div>
