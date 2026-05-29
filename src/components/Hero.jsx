@@ -28,31 +28,6 @@ const Hero = () => {
       
       <div className="container-custom mx-auto relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="text-center md:text-left">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-terracotta/20 backdrop-blur-sm rounded-md text-gold font-semibold text-sm mb-6">
-              <FaStar size={14} className="text-terracotta" />
-              <span>Historical Fiction | Native American Epic</span>
-              <FaStar size={14} className="text-terracotta" />
-            </div>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gold mb-6 leading-tight">
-              {authorData.fullName}
-              <span className="block text-terracotta text-2xl md:text-3xl mt-2">Historical Fiction Author</span>
-            </h1>
-            <p className="text-lg text-cream/90 mb-8 leading-relaxed">
-              Author of "Thunder in the Wind" - a powerful story of Native American resistance, cultural identity, and the fight to preserve selfhood at the turn of the twentieth century.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <a href="#book" className="bg-gold hover:bg-terracotta text-brown-dark px-8 py-3 rounded-md font-semibold transition-all duration-300 flex items-center justify-center gap-2 group transform hover:-translate-y-0.5 shadow-lg">
-                Explore Thunder in the Wind
-                <FaArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-              </a>
-              <a href="#about" className="border-2 border-gold text-gold hover:bg-gold hover:text-brown-dark px-8 py-3 rounded-md font-semibold transition-all duration-300 flex items-center justify-center gap-2">
-                Meet the Author
-                <FaChevronRight size={18} />
-              </a>
-            </div>
-          </div>
-
           <div className="relative flex justify-center">
             <div className="relative rounded-md overflow-hidden shadow-2xl max-w-md mx-auto bg-gradient-to-br from-terracotta/20 via-gold/10 to-brown-dark/30 p-6 border-2 border-gold/50">
               <div className="relative">
@@ -81,6 +56,32 @@ const Hero = () => {
               </div>
             </div>
           </div>
+
+          <div className="text-center md:text-left">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-terracotta/20 backdrop-blur-sm rounded-md text-gold font-semibold text-sm mb-6">
+              <FaStar size={14} className="text-terracotta" />
+              <span>Historical Fiction | Native American Epic</span>
+              <FaStar size={14} className="text-terracotta" />
+            </div>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gold mb-6 leading-tight">
+              {authorData.fullName}
+              <span className="block text-terracotta text-2xl md:text-3xl mt-2">Historical Fiction Author</span>
+            </h1>
+            <p className="text-lg text-cream/90 mb-8 leading-relaxed">
+              Author of "Thunder in the Wind" - a powerful story of Native American resistance, cultural identity, and the fight to preserve selfhood at the turn of the twentieth century.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <a href="#book" className="bg-gold hover:bg-terracotta text-brown-dark px-8 py-3 rounded-md font-semibold transition-all duration-300 flex items-center justify-center gap-2 group transform hover:-translate-y-0.5 shadow-lg">
+                Explore Thunder in the Wind
+                <FaArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+              </a>
+              <a href="#about" className="border-2 border-gold text-gold hover:bg-gold hover:text-brown-dark px-8 py-3 rounded-md font-semibold transition-all duration-300 flex items-center justify-center gap-2">
+                Meet the Author
+                <FaChevronRight size={18} />
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
       
